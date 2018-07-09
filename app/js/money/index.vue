@@ -1,0 +1,51 @@
+<template lang="html">
+    <div>
+        <Heador></Heador>
+        <Slider></Slider>
+        <Ada></Ada>
+        <Money></Money>
+        <Adb></Adb>
+        <Finance></Finance>
+        <Adc></Adc>
+        <Footor cname="mfooter"></Footor>
+        <Navbar></Navbar>
+    </div>
+</template>
+
+<script>
+import Heador from '../public/header.vue';
+import Footor from '../public/footer.vue';
+import Navbar from '../public/navbar.vue';
+import Slider from './mslider.vue';
+import Ada from './ada.vue';
+import Money from './money.vue';
+import Adb from './adb.vue';
+import Finance from './finance.vue';
+import Adc from './Adc.vue';
+
+export default {
+  components: {
+    Heador,
+    Footor,
+    Navbar,
+    Slider,
+    Ada,
+    Money,
+    Adb,
+    Finance,
+    Adc,
+  }
+}
+</script>
+
+<style lang="scss">
+.mfooter{
+  ul{
+    li:first-child{
+      display: none;
+    }
+  }
+}
+</style>
+
+
